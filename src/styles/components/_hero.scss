@@ -1,0 +1,54 @@
+.heroContainer {
+    padding: 2rem 0;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    // flex-wrap: wrap;
+
+    .content {
+        padding: 0 5%;
+
+        h1 {
+            color: var(--color-500);
+            font-size: 4rem;
+        }
+
+        p {
+            margin: 1rem 0;
+            color: #94A2B3;
+        }
+
+        button {
+            padding: 1.2rem 1.7rem ;
+            font-size: 1.2rem;
+            border-radius: 2rem;
+            color: white;
+            background-color: var(--color-300);
+        }
+
+        span {
+            color: #94A2B3;
+            margin: 0 .5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #299EF3;
+            font-weight: 600;
+        }
+    }
+
+    img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 950px) {
+    .heroContainer {
+        img {
+            display: none;
+        }
+    }
+}

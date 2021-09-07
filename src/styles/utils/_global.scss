@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --color-300: #7854F7;
+    --color-400: #484a52;
+    --color-500: #272D4E;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 600;
+    transition: .2s;
+
+    &:hover {
+        filter: brightness(.8);
+    }
+
+}
+
+main {
+    // padding: 5%;
+}

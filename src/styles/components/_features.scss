@@ -1,0 +1,104 @@
+.featuresContainer {
+    padding: 0 5%;
+    margin: 2rem 0;
+    overflow: hidden;
+    
+    > h1 {
+        color: var(--color-400);
+        font-size: 1.9rem;
+        text-align: center;
+
+        span {
+            color: var(--color-500);
+        }
+
+    }
+    .features {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+            width: 100%;
+            
+            div {
+                padding: 0 1rem ;
+            }
+
+            img {
+                width: 400px;
+            }
+
+            .ps1 {
+                position: absolute;
+                width: 200px;
+                z-index: 2;
+                left: -70px;
+                top: 10%;
+            }
+
+            .ps3 {
+                position: absolute;
+                width: 200px;
+                z-index: 2;
+                left: 10px;
+                top: -15%;
+                // transform: translateY(50%);
+            }
+            .ps2 {
+                position: absolute;
+                width: 200px;
+                z-index: 2;
+                right: -70px;
+                top: 35%;
+            }
+            .ps4 {
+                position: absolute;
+                width: 150px;
+                z-index: 2;
+                right: 30px;
+                top: -20%;
+            }
+
+            h1 {
+                color: var(--color-500);
+                font-size: 1.7rem;
+            }
+
+            p {
+                margin: .7rem 0;
+                color: #94A2B3;
+            }
+
+            a {
+                text-decoration: none;
+                color: #299EF3;
+                font-weight: 600;
+            }
+
+            &:nth-child(2) {
+                margin-top: 2rem;
+            }
+            &:nth-child(3) {
+                margin-top: 4rem;
+            }
+
+            figure {
+                position: relative;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .featuresContainer {
+        .features {
+            flex-wrap: wrap;
+            // article {
+        }
+    }
+}

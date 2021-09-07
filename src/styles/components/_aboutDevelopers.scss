@@ -1,0 +1,129 @@
+.aboutDevelopers {
+    background-color: var(--color-300);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    svg {
+        z-index: 0;
+        position: absolute;
+        
+        &:last-child {
+            bottom: 0;
+        }
+    }
+    
+    > div {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        padding:0  5%;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        
+        
+        figure {
+            position: relative;
+            z-index: 3;
+
+            .imgPrimary {
+                width: 100%;
+                z-index: 2;
+                max-width: 430px;
+                min-width: 300px;
+            }
+        }
+
+        .content {
+            z-index: 2;
+            max-width: 370px;
+            color: white;
+
+            h2  {
+                font-size: 2.25rem;
+            }
+
+            p {
+                margin: 1rem 0;
+                line-height: 1.4rem;
+            }
+
+            button {
+                font-size: 1.1rem;
+                color: white;
+                background-color: #70C217;
+                padding: 1.2rem 1.7rem;
+                border-radius: 2rem;
+            }
+        }
+
+        &:first-child {
+            margin-right: auto;
+
+            img {
+                &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                &:nth-child(2) {
+                    left: -20px;
+                    top: 15%;
+                }
+                &:nth-child(3) {
+                    left: -1px;
+                    bottom: -10px;
+                }
+                &:nth-child(4) {
+                    width: 130px;
+                    left: 10px;
+                    bottom: -30%;
+                }
+            }
+            
+        }
+
+        &:last-child {
+            margin-left: auto;
+            img {
+                &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    position: absolute;
+                    z-index: -1;
+                }
+                &:nth-child(2) {
+                    left: 100px;
+                    top: -15px;
+                }
+                &:nth-child(3) {
+                    right: -20%;
+                    top: -2px;
+                }
+                &:nth-child(4) {
+                    transform: rotate(90deg);
+                    width: 130px;
+                    right: -50%;
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .aboutDevelopers {
+
+        > div {
+            gap: 3rem;
+        }
+
+        .item {
+            flex-direction: column;
+            margin: 0 !important;
+        }
+    }
+}
